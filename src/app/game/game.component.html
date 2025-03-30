@@ -1,4 +1,6 @@
-<app-player style="top: 100px" class="player-position"></app-player>
+@for (player of game.players; track player; let i = $index;) {
+  <app-player [name]=player [ngStyle]="{'top.px': 100 + (i * 150)}" class="player-position"></app-player>
+}
 
 <section>
   <div>
