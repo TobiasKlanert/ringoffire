@@ -9,7 +9,6 @@
     }
     <img
       (click)="takeCard()"
-      [class.pick-card]="pickCardAnimation"
       class="top-card"
       style="right: 25px"
       src="/assets/img/cards/card_cover.png"
@@ -18,8 +17,7 @@
     @if (pickCardAnimation) {
     <img
       (click)="takeCard()"
-      [class.pick-card]="pickCardAnimation"
-      class="top-card"
+      class="pick-card"
       style="right: 25px"
       src="/assets/img/cards/ace_1.png"
       alt=""
