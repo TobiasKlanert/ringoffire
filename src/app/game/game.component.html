@@ -1,3 +1,5 @@
+<app-player style="top: 100px" class="player-position"></app-player>
+
 <section>
   <div>
     @for (card of [0,1,2,3,4]; track card) {
@@ -14,7 +16,9 @@
       src="/assets/img/cards/card_cover.png"
       alt=""
     />
-    @if (pickCardAnimation) {
+    @for (card of game.playedCards; track card) {
+    <img class="played-card" src="/assets/img/cards/{{ card }}.png" alt="" />
+    } @if (pickCardAnimation) {
     <img
       (click)="takeCard()"
       class="pick-card"
