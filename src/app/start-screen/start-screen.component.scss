@@ -1,12 +1,17 @@
 @import '../mixins.scss';
 
-.start-screen {
-    background-color: #404040;
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
+section {
+    background-image: url('../../assets/img/start.jpg');
+    @include standardSection;
     @include dFlex;
-    img {
-        height: 100vh;
+    div {
+        height: 50%;
+        @include dFlex($fd: column, $jc: space-between)
     }
+}
+
+button {
+    height: auto;
+    width: 20vw;
+    font-size: 48px;
 }
