@@ -30,7 +30,8 @@
     />
     }
   </div>
-  <button (click)="openDialog()" mat-fab>
-    <mat-icon>add</mat-icon>
-  </button>
 </section>
+<app-game-info [card]="currentCard"></app-game-info>
+<button (click)="openDialog()" mat-fab>
+  <mat-icon>add</mat-icon>
+</button>
