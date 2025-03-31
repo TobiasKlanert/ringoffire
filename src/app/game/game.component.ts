@@ -18,7 +18,6 @@ import { DialogAddPlayerComponent } from '../dialog-add-player/dialog-add-player
     MatDividerModule,
     MatIconModule,
     MatDialogModule,
-    DialogAddPlayerComponent,
   ],
   templateUrl: './game.component.html',
   styleUrl: './game.component.scss',

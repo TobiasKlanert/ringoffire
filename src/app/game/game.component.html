@@ -1,5 +1,5 @@
 @for (player of game.players; track player; let i = $index;) {
-  <app-player [name]=player [ngStyle]="{'top.px': 100 + (i * 150)}" class="player-position"></app-player>
+  <app-player [playerActive] = "i == game.currentPlayer" [name]=player [ngStyle]="{'top.px': 100 + (i * 90)}" class="player-position"></app-player>
 }
 
 <section>

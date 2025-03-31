@@ -1,7 +1,7 @@
 @import '../mixins.scss';
 
 section {
-    @include dFlex;
+    @include dFlex($jc: flex-start);
     width: 300px;
     background-color: goldenrod;
     border-top-left-radius: 50px;
@@ -9,11 +9,16 @@ section {
     span {
         font-size: 32px;
         margin-left: 16px;
+        color: white;
     }
 }
 
 img {
-    width: 100px;
+    width: 60px;
     object-fit: cover;
     border-radius: 100%;
+}
+
+.player-active {
+    background-color: rgba(100, 100, 100, 0.7) !important;
 }
