@@ -9,16 +9,5 @@ h1 {
     font-size: 72px;
 }
 
-button {
-    cursor: pointer;
-    background-color: goldenrod;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    color: white;
-    &:hover {
-        background-color: gold;
-    }
-}
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
